@@ -20,12 +20,18 @@ class BinaryGate(LogicGate):
         self.pinB = None
 
     def getPinA(self):
-        return int(input("Enter Pin A input for gate" +
-                             self.getLabel() + "-->"))
+        if self.pinA == None:
+            return input("Enter Pin A input for gate" +
+                         self.getName() + "-->")
+        else:
+            return self.pinA.getFrom().getOutput()
 
     def getPinB(self):
-            return int(input("Enter Pin B input for gate" +
-                             self.getLabel() + "-->"))
+        if self.pinB == None:
+            return input("Enter Pin B input for gate" +
+                         self.getName() + "-->")
+        else:
+            return self.pinB.getFrom().getOutput()
 
 class UnaryGate(LogicGate):
 
@@ -58,7 +64,7 @@ class Connector:
         self.fromgate = fgate
         self.togate = tgate
 
-        tgete.setNextPin(self)
+        tgate.setNextPin(self)
 
     def getFrom(self):
         return self.fromgate
