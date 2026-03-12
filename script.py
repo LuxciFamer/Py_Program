@@ -1,4 +1,7 @@
 class LogicGate:
+    """
+    基础逻辑门类，表示一个逻辑门的基本结构。
+    """
 
     def __init__(self,n):
         self.label = n
@@ -34,6 +37,9 @@ class BinaryGate(LogicGate):
             return self.pinB.getFrom().getOutput()
 
 class UnaryGate(LogicGate):
+    """
+    一元逻辑门类，继承自LogicGate，用于处理一个输入的逻辑门。
+    """
 
     def __init__(self,n):
         super().__init__(n)
@@ -59,6 +65,9 @@ class AndGate(LogicGate):
             return 0
 
 class Connector:
+    """
+    连接器类，用于连接逻辑门之间的输入和输出。
+    """
 
     def __init__(self,fgate,tgate):
         self.fromgate = fgate
