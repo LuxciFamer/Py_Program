@@ -1,6 +1,10 @@
 class LogicGate:
     """
     基础逻辑门类，表示一个逻辑门的基本结构。
+
+    属性:
+    - label: 门的名称或标签，用于在提示或调试时识别该门
+    - output: 缓存门当前计算得到的输出（0 或 1），通过 `getOutput()` 计算并返回
     """
 
     def __init__(self, n):
@@ -8,9 +12,15 @@ class LogicGate:
         self.output = None
 
     def getLabel(self):
+        """返回门的标签/名称。"""
         return self.label
 
     def getOutput(self):
+        """计算并返回当前门的输出。
+
+        实现细节：调用子类实现的 `performGateLogic()` 方法得到逻辑结果，
+        并将结果缓存到 `self.output` 中以便后续使用。
+        """
         self.output = self.performGateLogic()
         return self.output
 
@@ -22,19 +32,25 @@ class BinaryGate(LogicGate):
         self.pinB = None
 
     def getPinA(self):
+        # 如果该引脚未被连接（即为 None），则从用户输入读取整型值（0 或 1）
         if self.pinA is None:
             return int(input(f"Enter Pin A input for gate {self.getLabel()} --> "))
         else:
+            # 否则，pinA 是一个 Connector，调用其来源门的输出
             return self.pinA.getFrom().getOutput()
 
     def getPinB(self):
+        # 同上，对 B 引脚的处理
         if self.pinB is None:
             return int(input(f"Enter Pin B input for gate {self.getLabel()} --> "))
         else:
             return self.pinB.getFrom().getOutput()
 
     def setNextPin(self, source):
-        """ 用于Connector连接时，设置本门的输入引脚。 """
+        """将来源 `source`（通常为 `Connector`）连接到该门的下一个可用引脚。
+
+        连接顺序：优先填充 `pinA`，然后 `pinB`。如果都已满，则抛出异常。
+        """
         if self.pinA is None:
             self.pinA = source
         elif self.pinB is None:
@@ -49,6 +65,7 @@ class UnaryGate(LogicGate):
         self.pin = None
 
     def getPin(self):
+        # 单输入门：如果未连接则请求用户输入，否则获取连接来源的输出
         if self.pin is None:
             return int(input(f"Enter Pin input for gate {self.getLabel()} --> "))
         else:
@@ -64,6 +81,7 @@ class AndGate(BinaryGate):
     def performGateLogic(self):
         a = self.getPinA()
         b = self.getPinB()
+        # 返回逻辑与的结果（1 或 0）
         return 1 if a == 1 and b == 1 else 0
 
 
@@ -75,6 +93,7 @@ class OrGate(BinaryGate):
     def performGateLogic(self):
         a = self.getPinA()
         b = self.getPinB()
+        # 返回逻辑或的结果（1 或 0）
         return 1 if a == 1 or b == 1 else 0
 
 
@@ -85,6 +104,7 @@ class NotGate(UnaryGate):
 
     def performGateLogic(self):
         a = self.getPin()
+        # 非门：取反输入（0/1）
         return 1 if a == 0 else 0
 
 
@@ -98,6 +118,7 @@ class NandGate(BinaryGate):
         a = self.getPinA()
         b = self.getPinB()
         # NAND = NOT(AND)
+        # 如果 (a and b) 为真，则返回 0，否则返回 1
         return 0 if a == 1 and b == 1 else 1
 
 
@@ -110,6 +131,7 @@ class NorGate(BinaryGate):
         a = self.getPinA()
         b = self.getPinB()
         # NOR = NOT(OR)
+        # 两个输入都为0时返回1，否则返回0
         return 1 if a == 0 and b == 0 else 0
 
 
@@ -122,6 +144,7 @@ class XorGate(BinaryGate):
         a = self.getPinA()
         b = self.getPinB()
         # XOR: (A AND NOT B) OR (NOT A AND B)
+        # 简单实现：两个输入不同时为1
         return 1 if a != b else 0
 
 
@@ -134,6 +157,7 @@ class XnorGate(BinaryGate):
         a = self.getPinA()
         b = self.getPinB()
         # XNOR = NOT(XOR)
+        # 两个输入相同时返回1
         return 1 if a == b else 0
 
 
@@ -141,12 +165,15 @@ class Connector:
     def __init__(self, fgate, tgate):
         self.fromgate = fgate
         self.togate = tgate
-        tgate.setNextPin(self)  # 现在 tgate (一个BinaryGate) 拥有 setNextPin 方法
+        # 创建连接后，立即将当前 Connector 绑定到目标门的下一个可用引脚
+        tgate.setNextPin(self)  # 现在 tgate (一个 BinaryGate/UnaryGate 扩展) 拥有 setNextPin 方法
 
     def getFrom(self):
+        """返回连接的来源门对象（Connector 从哪里来的）。"""
         return self.fromgate
 
     def getTo(self):
+        """返回连接的目标门对象（Connector 到哪里去）。"""
         return self.togate
 
 
