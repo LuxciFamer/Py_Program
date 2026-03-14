@@ -43,45 +43,45 @@ def plot_temperature_curves(df, output_image_path='temperature_plot.png'):
         print("错误：缺少必要的数据列")
         return
     
-    # 转换日期时间列
+    # 转换日期时间列为datetime格式，便于处理
     df['Date/Time'] = pd.to_datetime(df['Date/Time'])
     
-    # 按日期排序
+    # 按日期排序，确保时间序列正确
     df = df.sort_values('Date/Time')
     
-    # 提取日期和温度
+    # 提取日期和温度数据
     dates = df['Date/Time']
     temperatures = df['Temp_C']
     
-    # 计算7天滑动平均
+    # 计算7天滑动平均（假设数据是每小时的，7天=168小时）
     window_size = 7 * 24  # 7天 * 24小时/天
     rolling_avg = temperatures.rolling(window=window_size, min_periods=1).mean()
     
-    # 创建图形
+    # 创建图形对象，设置尺寸
     plt.figure(figsize=(15, 8))
     
-    # 绘制逐日温度（每小时数据）
+    # 绘制原始逐小时温度曲线，半透明蓝色线
     plt.plot(dates, temperatures, 'b-', alpha=0.5, linewidth=0.8, label='Hourly Temperature')
     
-    # 绘制7天滑动平均
+    # 绘制7天滑动平均曲线，红色粗线
     plt.plot(dates, rolling_avg, 'r-', linewidth=2, label='7-Day Moving Average')
     
-    # 设置图形属性
+    # 设置图形标题、轴标签和图例
     plt.title('Temperature Variation with 7-Day Moving Average', fontsize=16, fontweight='bold')
     plt.xlabel('Date/Time', fontsize=12)
     plt.ylabel('Temperature (°C)', fontsize=12)
     plt.legend(loc='best', fontsize=12)
     plt.grid(True, alpha=0.3)
     
-    # 自动调整x轴日期格式
+    # 自动调整x轴日期标签格式，避免重叠
     plt.gcf().autofmt_xdate()
     
-    # 保存图形
+    # 保存图形到指定路径，高分辨率
     plt.tight_layout()
     plt.savefig(output_image_path, dpi=300, bbox_inches='tight')
     print(f"温度变化曲线已保存为: {output_image_path}")
     
-    # 显示图形
+    # 显示图形窗口
     plt.show()
 
 # 4. 将结果保存到文件
