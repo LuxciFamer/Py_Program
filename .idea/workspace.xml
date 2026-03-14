@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acf43545-6e6f-4f0c-8d40-55edd986f497" name="更改" comment="整理">
-      <change beforePath="$PROJECT_DIR$/.idea/Py_Program.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/人工智能与地球科学课程/temperature_analysis_results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/人工智能与地球科学课程/temperature_analysis_results.txt" afterDir="false" />
-    </list>
+    <list default="true" id="acf43545-6e6f-4f0c-8d40-55edd986f497" name="更改" comment="整理" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,6 +130,7 @@
       <workItem from="1773491556828" duration="72000" />
       <workItem from="1773491643444" duration="837000" />
       <workItem from="1773492931065" duration="29000" />
+      <workItem from="1773493936930" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="整理">
       <option name="closed" value="true" />
@@ -152,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773474709528</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="整理">
+      <option name="closed" value="true" />
+      <created>1773494100839</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773494100839</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
