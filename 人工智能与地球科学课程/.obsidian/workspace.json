@@ -94,16 +94,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "人工智能与地球科学01.md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "人工智能与地球科学01 的反向链接列表"
             }
           },
           {
@@ -166,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,11 +182,12 @@
   },
   "active": "b4f7e74070f4cc0c",
   "lastOpenFiles": [
-    "temperature_variation.png",
-    "Pasted image 20260313221812.png",
-    "Pasted image 20260313215447.png",
-    "Pasted image 20260313221738.png",
+    "图片/temperature_variation.png",
     "人工智能与地球科学01.md",
+    "图片/Pasted image 20260313221812.png",
+    "图片/Pasted image 20260313215447.png",
+    "图片",
+    "Pasted image 20260313221738.png",
     "Figure_1.png",
     "temperature_analysis_results.txt",
     "weather_analysis.py",
