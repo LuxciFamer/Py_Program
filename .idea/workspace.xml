@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acf43545-6e6f-4f0c-8d40-55edd986f497" name="更改" comment="无">
+      <change afterPath="$PROJECT_DIR$/learn_python数据结构与算法/导论及其练习/反向计算.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_python数据结构与算法/导论及其练习/基础逻辑门（半加器_全加器）.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_python数据结构与算法/导论及其练习/德州扑克框架.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_python数据结构与算法/导论及其练习/数独.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn_python数据结构与算法/导论及其练习/简洁函数半加器.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_python数据结构与算法/逻辑门电路.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn_python数据结构与算法/导论及其练习/逻辑门电路.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/人工智能与地球科学课程/temperature_analysis_results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/人工智能与地球科学课程/temperature_analysis_results.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +23,13 @@
     <persistenceIdMap>
       <entry key="_D:/0_Py_Self" value="3AntMFnUS5HCC4meYQgHJZ2zhkh" />
     </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,32 +54,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.check_env.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.script.executor": "Run",
-    "Python.weather_analysis.executor": "Run",
-    "Python.逻辑门电路.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/0_Py_Self",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.check_env.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.script.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.weather_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.反向计算.executor&quot;: &quot;Run&quot;,
+    &quot;Python.基础逻辑门（半加器）.executor&quot;: &quot;Run&quot;,
+    &quot;Python.德州扑克框架.executor&quot;: &quot;Run&quot;,
+    &quot;Python.数独.executor&quot;: &quot;Run&quot;,
+    &quot;Python.逻辑门电路.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/0_Py_Self&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\0_Py_Self\learn_python数据结构与算法\导论及其练习" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Py_Program" />
@@ -134,7 +160,9 @@
       <workItem from="1773492931065" duration="29000" />
       <workItem from="1773493936930" duration="753000" />
       <workItem from="1773494735894" duration="187000" />
-      <workItem from="1773495003587" duration="387000" />
+      <workItem from="1773495003587" duration="645000" />
+      <workItem from="1773574204343" duration="279000" />
+      <workItem from="1773574568413" duration="2111000" />
     </task>
     <task id="LOCAL-00001" summary="整理">
       <option name="closed" value="true" />
@@ -168,18 +196,47 @@
       <option name="project" value="LOCAL" />
       <updated>1773494914897</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="无">
+      <option name="closed" value="true" />
+      <created>1773495630541</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773495630541</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -194,11 +251,12 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Py_Program$main.coverage" NAME="main 覆盖结果" MODIFIED="1773291407007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/0_Py_Program$.coverage" NAME="逻辑门电路 覆盖结果" MODIFIED="1773474246699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python数据结构与算法" />
-    <SUITE FILE_PATH="coverage/0_Py_Self$.coverage" NAME="逻辑门电路 覆盖结果" MODIFIED="1773476104634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python数据结构与算法" />
     <SUITE FILE_PATH="coverage/0_Py_Self$check_env.coverage" NAME="check_env 覆盖结果" MODIFIED="1773479650422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人工智能与地球科学课程" />
+    <SUITE FILE_PATH="coverage/0_Py_Self$.coverage" NAME="数独 覆盖结果" MODIFIED="1773576530618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python数据结构与算法" />
+    <SUITE FILE_PATH="coverage/0_Py_Self$test.coverage" NAME="test 覆盖结果" MODIFIED="1773574897475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learn_python数据结构与算法" />
     <SUITE FILE_PATH="coverage/Py_Program$script.coverage" NAME="script 覆盖结果" MODIFIED="1773291584367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/0_Py_Program$check_env.coverage" NAME="check_env 覆盖结果" MODIFIED="1773473403079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人工智能与地球科学课程" />
-    <SUITE FILE_PATH="coverage/0_Py_Self$weather_analysis.coverage" NAME="weather_analysis 覆盖结果" MODIFIED="1773477674998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人工智能与地球科学课程" />
+    <SUITE FILE_PATH="coverage/0_Py_Self$weather_analysis.coverage" NAME="weather_analysis 覆盖结果" MODIFIED="1773574425376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人工智能与地球科学课程" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
